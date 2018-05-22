@@ -1,8 +1,8 @@
 # Southwest Airlines Check in Bot
 ## Introduction:
-If you're reading this, you and I both know Southwest has a horrible check in process. If you want any hope of getting a decent seat, so help you God, you'd better hit that button exactly at the 24h mark. Luckily for you, this does it for you.  Good luck. You should probably just pay for priority check in. It's like $15.
+If you're reading this, you and I both know Southwest has a horrible check in process. If you want any hope of getting a decent seat, so help you God, you'd better hit that button exactly at the 24h mark. Natrually, the only solution is to embrace our robot overlords and their ever-superior clicking abilities.
     
-## Prerequisites
+## Prerequisites:
 This script requires python 3 and chromedriver. For linux, look at the dependencies; you can figure out the rest with sudo apt. For mac, use homebrew to install these. If you're on a mac and you don't have homebrew, get it:
 
 ```bash
