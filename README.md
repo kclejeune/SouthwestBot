@@ -9,12 +9,17 @@ This script requires python 3 and chromedriver. For linux, look at the dependenc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/ Homebrew/install/master/install)"
 ```
 Next, clone this repository:
+
 `git clone https://github.com/kclejeune/SouthwestBot.git`
+
 Now we can install chromedriver and python.
+
 `brew cask install chromedriver`
 `brew install python`
+
 Now, we've installed chromedriver and python respectively.  
 We'll need some additional things to run this, so use:
+
 `pip3 install -r requirements.txt`
 
 ## Usage:
