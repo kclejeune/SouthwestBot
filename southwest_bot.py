@@ -5,18 +5,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import datetime
 
-# query for flight info
-confirmation_code = input("Confirmation Code: ")
-first_name = input("First Name: ")
-last_name = input("Last Name: ")
-check_in_date = datetime.datetime.strptime(input("Check in date/time\n(dd/mm/yyyy hr:min): "), "%m/%d/%Y %H:%M")
-
-
 # initial browser setup
 chromedriver = "chromedriver"
 driver = webdriver.Chrome(chromedriver)
 url = "https://www.southwest.com/air/check-in/"
 
+# query for flight info
+confirmation_code = input("Confirmation Code: ")
+first_name = input("First Name: ")
+last_name = input("Last Name: ")
+check_in_date = datetime.datetime.strptime(input("Check in date/time\n(dd/mm/yyyy hr:min): "), "%m/%d/%Y %H:%M")
 
 # wait until 1 minute before 
 pause.until(check_in_date - datetime.timedelta(minutes=1))
