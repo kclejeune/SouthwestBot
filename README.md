@@ -13,10 +13,10 @@ Next, clone this repository:
 `git clone https://github.com/kclejeune/SouthwestBot.git`
 
 Now we can install chromedriver and python.
-
-`brew cask install chromedriver`
-`brew install python`
-
+```bash
+brew cask install chromedriver
+brew install python
+```
 Now, we've installed chromedriver and python respectively.  
 We'll need some additional things to run this, so use:
 
