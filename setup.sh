@@ -10,8 +10,11 @@ brew cask install chromedriver
 brew install python
 clear
 
+# clone the repostiory
+git clone https://github.com/kclejeune/SouthwestBot.git
+
 # navigate to the directory and install requirements
-cd ~/RegistrationBot
+cd ~/SouthwestBot
 pip3 install -r requirements.txt
 clear
 echo "Installation complete. Refer to README.md for running instructions."
