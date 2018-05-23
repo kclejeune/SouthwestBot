@@ -17,16 +17,14 @@ This script requires python 3 and chromedriver. For linux, look at the dependenc
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-We'll install chromedriver and python 3 using this:
+We'll install chromedriver, python3, and some additional requirements using this:
 ```bash
 brew cask install chromedriver
 brew install python
-```
-We'll need some additional things to run this, so use:
-```bash
 cd ~/SouthwestBot/
 pip3 install -r requirements.txt
 ```
+That's it! Now, check out the fun stuff.
 ## The Fun Stuff:
 Now we have everything necessary for this to work. Nice.
 To run:
