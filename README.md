@@ -12,14 +12,11 @@ The setup script will install everything you need and then clean up. If you use 
 ## Manual Install (the REALLY boring stuff):
 First, we'll need to make sure you have a magical tool called homebrew. It's very safe, and it'll help you manage scary things in a consistent manner.
 ```bash
-if [ -e /usr/local/bin/brew ]; then 
-    echo Homebrew already installed
-else 
+if [ ! -e /usr/local/bin/brew ]; then 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    echo Homebrew Installed
 fi
 ```
-Next, clone the repository.
+Next, clone this repository.
 ```bash
 git clone https://github.com/kclejeune/SouthwestBot.git
 ```
@@ -37,4 +34,4 @@ To run:
 ```bash
 python3 ~/SouthwestBot/southwest_bot.py
 ```
-Follow the instructions in the script, don't shut down your computer, and you'll be looking at a seat somewhere hopefully other than the very back of your next southwest flight.
+Follow the instructions in the script, don't shut down your computer, and with any luck you'll be looking at a seat somewhere hopefully other than the very back of your next southwest flight.
