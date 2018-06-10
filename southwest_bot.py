@@ -1,4 +1,4 @@
-#!python3
+#!/usr/bin/env python
 import pause
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,7 +15,7 @@ url = "https://www.southwest.com/air/check-in/"
 confirmation_code = input("Confirmation Code: ")
 first_name = input("First Name: ")
 last_name = input("Last Name: ")
-check_in_date = datetime.datetime.strptime(input("Check in date/time\n(dd/mm/yyyy hr:min): "), "%m/%d/%Y %H:%M")
+check_in_date = datetime.datetime.strptime(input("Check in date/time\n(dd/mm/yy 24hr:min): "), "%m/%d/%y %H:%M")
 
 # wait until 1 minute before 
 pause.until(check_in_date - datetime.timedelta(minutes=1))
