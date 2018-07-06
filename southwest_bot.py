@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from sys import argv
 import pause
 import datetime
@@ -43,12 +42,12 @@ driver.find_element_by_id("passengerLastName").send_keys(last_name)
 submit = driver.find_element_by_id("form-mixin--submit-button")
 
 # wait until the check in time to click the button, click until the button disappears
-# pause.until(check_in_date)
+pause.until(check_in_date)
 while EC.presence_of_element_located((By.ID, "confirmationNumber")):
     try:
         submit.click()
     except:
-        pause.sleep(.1)
+        continue
 
 try:
     driver.find_element_by_id("confirmationNumber")
