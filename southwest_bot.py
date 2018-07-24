@@ -49,8 +49,11 @@ while EC.presence_of_element_located((By.ID, "confirmationNumber")):
     except:
         continue
 
+# attempt to find nonexistent elements from checkin page to verify that the new page has been loaded
 try:
     driver.find_element_by_id("confirmationNumber")
+    driver.find_element_by_id("passengerFirstName")
+    driver.find_element_by_id("passengerLastName")
     print("Check in failed. Please try again manually.")
 except ValueError:
     print("Successful Check In!")
