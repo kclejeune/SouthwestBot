@@ -1,5 +1,8 @@
 # Southwest Airlines Check in Bot
 
+## WARNING: CURRENTLY BROKEN
+I’m in the process of issuing an update to get past a confirmation page. Do not use this script in the meantime. 
+
 ## Introduction
 
 If you're reading this, you and I both know Southwest has a horrible check in process. If you want any hope of getting a decent seat, so help you God, you'd better hit that button exactly at the 24h mark. Natrually, the only solution is to embrace our robot overlords and their ever-superior clicking abilities.
